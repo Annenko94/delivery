@@ -1,0 +1,22 @@
+@mixin textFont($size, $color, $weight, $family) {
+    font-family: "#{$family}", sans-serif;
+    font-size: $size;
+    color: $color;
+    font-weight: $weight;
+}
+  
+@mixin includeFont ($font-weight, $font-family, $font-name) {
+    @font-face {
+        font-weight: $font-weight;
+        font-family: "#{$font-family}";
+        src: local($font-family), url("../fonts/#{$font-name}.woff2") format("woff2"), url("../fonts/#{$font-name}.woff") format("woff");
+        font-display: swap;
+    }
+}
+
+@mixin reset() {
+    background-color: transparent;
+    border: none;
+    color: black;
+}
+

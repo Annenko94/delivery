@@ -1,0 +1,94 @@
+.app {
+  padding-top: 293px;
+  padding-bottom: 200px;
+
+  @media (max-width: 1199px) {
+    padding-top: 200px;
+  }
+
+  @media (max-width: 991px) {
+    padding-bottom: 100px;
+  }
+
+  &__row {
+    display: flex;
+
+    @media (max-width: 991px) {
+      flex-direction: column;
+    }
+  }
+
+  &__heading {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #f6762c;
+    margin-bottom: 13px;
+
+    @media (max-width: 991px) {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  &__content {
+    padding-right: 20px;
+
+    @media (max-width: 991px) {
+      margin: 0 auto;
+      padding: 0;
+    }
+  }
+
+  &__bg-img {
+    width: auto;
+    max-height: 500px;
+    object-fit: cover;
+
+    @media (max-width: 991px) {
+      margin: 0 auto;
+      max-height: 400px;
+    }
+  }
+
+  &__title {
+    max-width: 405px;
+    font-weight: 700;
+    font-size: 39px;
+    line-height: 145%;
+    margin-bottom: 30px;
+
+    @media (max-width: 991px) {
+      margin: 0 auto;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__description {
+    max-width: 457px;
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 40px;
+
+    @media (max-width: 991px) {
+      text-align: center;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  &__link {
+    &:not(:last-child) {
+      margin-right: 25px;
+    }
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}

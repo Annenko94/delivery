@@ -1,0 +1,59 @@
+.page {
+  @include textFont(16px, #190c05, 400, $titleFont);
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+.page.lock {
+  overflow: hidden;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f6762c;
+}
+.none {
+  display: none;
+}
+
+p {
+  opacity: 0.6;
+}
+.container {
+  max-width: 1180px;
+  padding: 0 15px;
+  margin: 0 auto;
+  @media (max-width: 575px) {
+    padding: 0 10px;
+ 
+  }
+}
+
+.heading {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.105em;
+  text-transform: uppercase;
+  color: #f6762c;
+}
+.title {
+  font-weight: 700;
+  font-size: 39px;
+  line-height: 145%;
+  color: #190c05;
+  opacity: 0.8;
+}
+
+.btn {
+  background: linear-gradient(180deg, #f6762c 0%, #c65311 100%);
+  border-radius: 10px;
+  text-align: center;
+}
+.btn:hover {
+  background: #d36940;
+
+
+}
